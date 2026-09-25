@@ -23,5 +23,9 @@ public class Main {
         System.out.println(klasa1P);
 
 klasa1P.wypiszInfo();
+Szkola szkola = Szkola.getSzkola("Mechanik TG");
+        System.out.println(szkola);
+szkola = Szkola.getSzkola("Jakas inna szkola"); //obiekt juz jest nie utworzy się ponownie
+        System.out.println(szkola);
     }
 }

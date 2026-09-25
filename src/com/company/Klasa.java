@@ -16,6 +16,16 @@ public class Klasa {
         uczniowie = new ArrayList<Uczen>();
     }
 
+    public ArrayList<Uczen> getUczniowie() {
+        return uczniowie;
+    }
+
+    public void usunUczniaZKlasy(Uczen uczen){
+        if(uczniowie.contains(uczen)){
+            uczniowie.remove(uczen);
+        }
+    }
+
     public boolean dodajUczniaDoKlasy (Uczen uczen){
         if(uczniowie.contains(uczen)){
             System.out.println(uczen+ " jest już w tej klasie");
